@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="../css/globals.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+</head>
+<body>
+    <div class="hero-section">
+        <div class="background-image"></div>
+        <div class="content-wrapper">
+            <header>
+                <div class="header__container">
+                  <div class="header__logo">
+                    <a href="C:\КЯР(лабы)\курсач\сайт\index.html">
+                      <img src="../foto/logotip.svg" alt="Hotel President Wilson" >
+                  </a>
+                  </div>
+                   <nav class="header__nav">
+                    <ul class="nav-list">
+                      <li><a href="C:\КЯР(лабы)\курсач\сайт\index.html" class="nav-link">Главная</a></li>
+                      <li><a href="C:\КЯР(лабы)\курсач\сайт\room.html" class="nav-link">Номера</a></li>
+                      <li><a href="C:\КЯР(лабы)\курсач\сайт\about.html" class="nav-link">Об отеле</a></li>
+                      <li><a href="C:\КЯР(лабы)\курсач\сайт\kitchen.html" class="nav-link">О кухне</a></li>
+                      <li><a href="C:\КЯР(лабы)\курсач\сайт\form.html" class="nav-button">Забронировать</a></li>
+                    </ul>
+                  </nav>
+                <button class="burger" aria-label="Открыть меню">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+                <nav class="mobile-menu">
+                    <button class="close-menu" aria-label="Закрыть меню">✖</button>
+                    <ul class="mobile-nav-list">
+                        <li><a href="C:\КЯР(лабы)\курсач\сайт\index.html" class="mobile-nav-link">Главная</a></li>
+                        <li><a href="C:\КЯР(лабы)\курсач\сайт\room.html" class="mobile-nav-link">Номера</a></li>
+                        <li><a href="C:\КЯР(лабы)\курсач\сайт\about.html" class="mobile-nav-link">Об отеле</a></li>
+                        <li><a href="C:\КЯР(лабы)\курсач\сайт\kitchen.html" class="mobile-nav-link">О кухне</a></li>
+                        <li><a href="C:\КЯР(лабы)\курсач\сайт\form.html" class="mobile-nav-button">Забронировать</a></li>
+                    </ul>
+                </nav>
+                </div>
+              </header>
+            <div class="hotel-header">
+                <h1 class="hotel-title">Hotel President Wilson</h1>
+                <p class="hotel-subtitle">Welcome to Hotel President Wilson, a Luxury Collection Hotel, Geneva</p>
+            </div>
+        </div>
+    </div>
+    <main class="main-content">
+      <h2>Выберите дату и забронируйте номер</h2>
+      <div class="form-container">
+        <section>
+            <div class="form-section">
+                <div style="display: flex; gap: 100px;">
+                    <div style="flex: 1;">
+                        <label>Фамилия</label>
+                        <input type="text" placeholder="Фамилия">
+                    </div>
+                    <div style="flex: 1;">
+                        <label class="email-label">Адрес электронной почты</label>
+                        <input type="email" placeholder="Адрес электронной почты">
+                    </div>
+                </div>
+            </div>
+            <div class="form-section">
+                <div style="display: flex; gap: 100px;">
+                    <div style="flex: 1;">
+                        <label>Имя</label>
+                        <input type="text" placeholder="Имя">
+                    </div>
+                    <div style="flex: 1;">
+                        <label>Номер телефона</label>
+                        <input type="tel" placeholder="Номер телефона">
+                    </div>
+                </div>
+            </div>
+            <div class="form-section">
+                <label>Отчество</label>
+                <input type="text" placeholder="Отчество">
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section>
+          <div class="form-section">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Дата заезда</label>
+                    <input type="date">
+                </div>
+                <div class="form-group">
+                    <label>Дата выезда</label>
+                    <input type="date">
+                </div>
+            </div>
+        </div>
+        </section>
+        <div class="divider"></div>
+        <section class="form-section">
+            <label>Настройки размещения</label>
+            <div class="form-row">
+                <div class="form-group">
+                    <h3 class="adults">Взрослые</h3>
+                    <select id="adults">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h3 class="children">Дети</h3>
+                    <select id="children">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section>
+            <div class="form-section">
+                <label>Выберите номер</label>
+                <select>
+                    <option value="suite">Люкс</option>
+                    <option value="premium">Премиум номер</option>
+                    <option value="gostevoi_deluxe1">Первый гостевой номер Делюкс</option>
+                    <option value="gostevoi_deluxe2">Второй гостевой номер Делюкс</option>
+                    <option value="ispolnitelnu">Исполнительный номер</option>
+                    <option value="yglovoi_yunior">Угловой Юниор</option>
+                    <option value="mladshi_lux">Младший Люкс</option>
+                    <option value="ispolnitelnu_leman">Исполнительный люкс Leman</option>
+                    <option value="koronnu_lux">Коронный Люкс</option>
+                    <option value="president_lux">Президентский Люкс</option>
+                </select>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <div class="button-section">
+          <button onclick="showSuccessMessage()">Забронировать</button>
+        </div>
+        <div id="success-message" style="display: none; text-align: center; font-size: 18px; color: rgb(91, 94, 91); margin-top: 20px;">
+          Бронирование успешно выполнено!
+        </div>
+    </div>    
+    </main>
+    <footer class="footer-section">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Социальные сети</h4>
+                <div class="social-links">
+                    <a href="https://facebook.com" class="social-link" target="_blank">
+                        <i class="social-icon fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" class="social-link" target="_blank">
+                        <i class="social-icon fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com" class="social-link" target="_blank">
+                        <i class="social-icon fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Локация</h4>
+                <p>Hotel President Wilson, a Luxury Collection Hotel, GENEVA</p>
+            </div>
+            <div class="footer-column">
+                <h4>Контакты</h4>
+                <p>Тел.: +41 22-9066113</p>
+                <p>Факс: +41 22-9066666</p>
+            </div>
+        </div>
+        <div class="footer-credit">Разработано Воронович Дианой Игоревной</div>
+    </footer>
+    <script src="js/form.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

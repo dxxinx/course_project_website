@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel President Wilson</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/globals.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+
+</head>
+<body>
+    <div class="hero-section">
+        <div class="background-image"></div>
+        <div class="content-wrapper">
+            <header>
+                <div class="header__container">
+                  <div class="header__logo">
+                    <a href="C:\КЯР(лабы)\курсач\сайт\index.html">
+                        <img src="../foto/logotip.svg" alt="Hotel President Wilson" >
+                    </a>
+                  </div>
+                  <nav class="header__nav">
+                    <ul class="nav-list">
+                      <li><a href="C:\КЯР(лабы)\курсач\сайт\index.html" class="nav-link">Главная</a></li>
+                      <li><a href="C:\КЯР(лабы)\курсач\сайт\room.html" class="nav-link">Номера</a></li>
+                      <li><a href="C:\КЯР(лабы)\курсач\сайт\about.html" class="nav-link">Об отеле</a></li>
+                      <li><a href="C:\КЯР(лабы)\курсач\сайт\kitchen.html" class="nav-link">О кухне</a></li>
+                      <li><a href="C:\КЯР(лабы)\курсач\сайт\form.html" class="nav-button">Забронировать</a></li>
+                    </ul>
+                  </nav>
+                <button class="burger" aria-label="Открыть меню">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+                <nav class="mobile-menu">
+                    <button class="close-menu" aria-label="Закрыть меню">✖</button>
+                    <ul class="mobile-nav-list">
+                        <li><a href="C:\КЯР(лабы)\курсач\сайт\index.html" class="mobile-nav-link">Главная</a></li>
+                        <li><a href="C:\КЯР(лабы)\курсач\сайт\room.html" class="mobile-nav-link">Номера</a></li>
+                        <li><a href="C:\КЯР(лабы)\курсач\сайт\about.html" class="mobile-nav-link">Об отеле</a></li>
+                        <li><a href="C:\КЯР(лабы)\курсач\сайт\kitchen.html" class="mobile-nav-link">О кухне</a></li>
+                        <li><a href="C:\КЯР(лабы)\курсач\сайт\form.html" class="mobile-nav-button">Забронировать</a></li>
+                    </ul>
+                </nav>
+                </div>
+              </header>
+            <div class="hotel-header">
+                <h1 class="hotel-title">Hotel President Wilson</h1>
+                <p class="hotel-subtitle">Welcome to Hotel President Wilson, a Luxury Collection Hotel, Geneva</p>
+            </div>
+        </div>
+    </div>
+    <main class="main-content">
+        <!-- Блок с номерами -->
+        <section class="rooms-section">
+            <h2 class="rooms-title">Наши номера</h2>
+            <div class="rooms-container">
+                <div class="room-card">
+                    <img src="../foto/gostevoy_nomer_delux_2.jpg" alt="Делюкс номер" class="room-image">
+                    <h3 class="room-name">Делюкс номер</h3>
+                </div>
+                <div class="room-card">
+                    <img src="../foto/yglovoy_yunior.jpg" alt="Угловой номер" class="room-image">
+                    <h3 class="room-name">Угловой номер</h3>
+                </div>
+                <div class="room-card">
+                    <img src="../foto/premium.jpg" alt="Премиум номер" class="room-image">
+                    <h3 class="room-name">Премиум номер</h3>
+                </div>
+            </div>
+            <div class="more-container">
+                <a href="C:\КЯР(лабы)\курсач\сайт\room.html" class="more-link1">
+                    Больше <span class="arrow">→</span>
+                </a>
+            </div>
+        </section>
+        <!-- Секция удобств с картинкой -->
+    <section class="amenities-section">
+        <h2 class="section-title">Удобства, которые мы предоставляем</h2>
+        <div class="amenities-container">
+        <div class="amenities-image">
+            <div class="slider">
+            <div class="slides">
+                <img src="../foto/28e6d12c5991ee2a296407fadf675f26.jpg" alt="Фото террасы с видом на море">
+                <img src="../foto/Снимок экрана 2025-05-06 164802.png" alt="Фото бассейна">
+                <img src="../foto/0b6c6571aa4240e838022cde5585b591.jpg" alt="Фото сада">
+            </div>
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+            </div>
+        </div>
+            <div class="amenities-list">
+                <div class="amenity-item">
+                    <i class="amenity-icon fas fa-spa"></i>
+                    <span class="amenity-text">Спа-центр</span>
+                </div>
+                <div class="amenity-item">
+                    <i class="amenity-icon fas fa-broom"></i>
+                    <span class="amenity-text">Ежедневная уборка номеров</span>
+                </div>
+                <div class="amenity-item">
+                    <i class="amenity-icon fas fa-swimming-pool"></i>
+                    <span class="amenity-text">Открытый бассейн</span>
+                </div>
+                <div class="amenity-item">
+                    <i class="amenity-icon fas fa-dumbbell"></i>
+                    <span class="amenity-text">Фитнес-центр</span>
+                </div>
+                <div class="amenity-item">
+                    <i class="amenity-icon fas fa-utensils"></i>
+                    <span class="amenity-text">Ресторан</span>
+                </div>
+                <div class="amenity-item">
+                    <i class="amenity-icon fas fa-wifi"></i>
+                    <span class="amenity-text">Бесплатный Wi-Fi</span>
+                </div>
+                <div class="amenity-item">
+                    <i class="amenity-icon fas fa-soap"></i>
+                    <span class="amenity-text">Прачечная</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="section-heading">Мы здесь</div>
+    <!--Секция с картой-->
+    <section class="map-section">
+        <div class="text-container">
+            <h2>НАШЕ МЕСТОПОЛОЖЕНИЕ<br><span class="smaller">КАК ДОБРАТЬСЯ СЮДА</span></h2>
+            <p>Отель President Wilson</p>
+            <p>47, набережная Уилсона, Женева, Швейцария, 1211</p>
+            <p class="phone">Тел.: +41 22-9066666</p>
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown('airport')">
+                    Аэропорт Женева
+                </div>
+                <div class="dropdown-content" id="airport-content">
+                    <p>Расстояние от объекта: 8.0 КМ</p>
+                    <p>В этом отеле не предоставляются услуги трансфера.</p>
+                    <p>Альтернативный Трансфер Из аэропорта</p>
+                    <p>Лимузин; стоимость: 180,00 швейцарских франков (в одну сторону); по запросу: ₣180,00 — в одну сторону</p>
+                    <p>По запросу: +41 22-9066102</p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown('transport')">
+                    Другой транспорт
+                </div>
+                <div class="dropdown-content" id="transport-content">
+                    <p>На территории отеля</p>
+                    <p>Частный автосервис</p>
+                    <p>Услуги лимузина /Микроавтобуса</p>
+                    <p>Поблизости</p>
+                    <p>Автобусная станция</p>
+                    <p>Гар Корнавен</p>
+                    <p>Железнодорожная станция</p>
+                    <p>Железнодорожный вокзал Женева-Корнавен</p>
+                </div>
+            </div>
+        </div>
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+    </section>
+    <div class="cuisine-heading">Познакомьтесь с нашей кухней</div>
+    <!-- Секция кухни -->
+    <section class="cuisine-section">
+        <div class="cuisine-content-wrapper">
+            <div class="background-circle"></div>
+            <div class="cuisine-images">
+                <img src="../foto/188c6796cb2b424dbe0b9892b16b98e0.jpg" alt="Блюдо 1" class="cuisine-image">
+                <img src="../foto/20ae66c22d5c548178b8e75b2e8d884f.jpg" alt="Блюдо 2" class="cuisine-image">
+                <img src="../foto/0b6c6571aa4240e838022cde5585b591.jpg" alt="Блюдо 3 - Центральное" class="cuisine-image">
+                <img src="../foto/54e5aa593340e42640a1863c40fce60d.jpg" alt="Блюдо 4" class="cuisine-image">
+                <img src="../foto/ee7c956312791a2278730ce4d2ef0a6b.jpg" alt="Блюдо 5" class="cuisine-image">
+            </div>
+        </div>
+        <div class="more-container">
+            <a href="C:\КЯР(лабы)\курсач\сайт\kitchen.html" class="more-link2">
+                Больше <span class="arrow">→</span>
+            </a>
+        </div>
+    </section>
+    <div class="reviews-heading">Отзывы</div>
+    <!-- Секция с отзывами -->
+    <section class="reviews-section">
+        <div class="review-cards">
+            <div class="review-card">
+                <h3>Екатерина</h3>
+                <p>Мы прекрасно провели 2 ночи в отеле после нашего круиза по Аляске. Персонал замечательный, они помогли нам с бронированием, обменом валюты, 
+                    даже с выбором еды.</p>
+            </div>
+            <div class="review-card">
+                <h3>Лука</h3>
+                <p>Отель President – это уникальное в Женеве явление, которое оживляет пребывание в этом городе, комфортный отдых всегда начинается с улыбки 
+                    и приветствия.</p>
+            </div>
+        </div>
+    </section>
+    </main>
+    <!-- Секция с футером -->
+    <footer class="footer-section">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Социальные сети</h4>
+                <div class="social-links">
+                    <a href="https://facebook.com" class="social-link" target="_blank">
+                        <i class="social-icon fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" class="social-link" target="_blank">
+                        <i class="social-icon fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com" class="social-link" target="_blank">
+                        <i class="social-icon fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Локация</h4>
+                <p>Hotel President Wilson, a Luxury Collection Hotel, GENEVA</p>
+            </div>
+            <div class="footer-column">
+                <h4>Контакты</h4>
+                <p>Тел.: +41 22-9066113</p>
+                <p>Факс: +41 22-9066666</p>
+            </div>
+        </div>
+        <div class="footer-credit">Разработано Воронович Дианой Игоревной</div>
+    </footer>
+<script src="js/main.js"></script>
+<script src="js/map.js"></script>
+<script src="js/amenities-slider.js"></script>
+</body>
+</html>

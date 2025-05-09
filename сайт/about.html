@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information about hotel</title>
+    <link rel="stylesheet" href="../css/globals.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="background-image"></div>
+        <div class="content-wrapper">
+            <header>
+                <div class="header__container">
+                  <div class="header__logo">
+                    <a href="C:\КЯР(лабы)\курсач\сайт\index.html">
+                        <img src="../foto/logotip.svg" alt="Hotel President Wilson" >
+                    </a>
+                  </div>
+                   <nav class="header__nav">
+                    <ul class="nav-list">
+                      <li><a href="C:\КЯР(лабы)\курсач\сайт\index.html" class="nav-link">Главная</a></li>
+                      <li><a href="C:\КЯР(лабы)\курсач\сайт\room.html" class="nav-link">Номера</a></li>
+                      <li><a href="C:\КЯР(лабы)\курсач\сайт\about.html" class="nav-link">Об отеле</a></li>
+                      <li><a href="C:\КЯР(лабы)\курсач\сайт\kitchen.html" class="nav-link">О кухне</a></li>
+                      <li><a href="C:\КЯР(лабы)\курсач\сайт\form.html" class="nav-button">Забронировать</a></li>
+                    </ul>
+                  </nav>
+                <button class="burger" aria-label="Открыть меню">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+                <nav class="mobile-menu">
+                    <button class="close-menu" aria-label="Закрыть меню">✖</button>
+                    <ul class="mobile-nav-list">
+                        <li><a href="C:\КЯР(лабы)\курсач\сайт\index.html" class="mobile-nav-link">Главная</a></li>
+                        <li><a href="C:\КЯР(лабы)\курсач\сайт\room.html" class="mobile-nav-link">Номера</a></li>
+                        <li><a href="C:\КЯР(лабы)\курсач\сайт\about.html" class="mobile-nav-link">Об отеле</a></li>
+                        <li><a href="C:\КЯР(лабы)\курсач\сайт\kitchen.html" class="mobile-nav-link">О кухне</a></li>
+                        <li><a href="C:\КЯР(лабы)\курсач\сайт\form.html" class="mobile-nav-button">Забронировать</a></li>
+                    </ul>
+                </nav>
+                </div>
+              </header>
+            <div class="hotel-header">
+                <h1 class="hotel-title">Об отеле President Wilson</h1>
+                <p class="hotel-subtitle">Welcome to Hotel President Wilson, a Luxury Collection Hotel, Geneva</p>
+            </div>
+        </div>
+    </div>
+    <main class="main-content">
+        <section class="info-section fade-in">
+            <div class="info-heading">Контактная информация</div>
+            <div class="contact-info">
+                <div class="address">
+                    <p>47 Quai WILSON, ЖЕНЕВА, 1211</p>
+                </div>
+                <div class="phone-fax">
+                    <p>Телефон: +41-22-9066113</p>
+                    <p>Факс: +41 22-9066666</p>
+                </div>
+            </div>
+        </section>
+        <section class="info-section fade-in">
+        <div class="info-heading">Данные об отеле</div>
+        <div class="info-cards">
+            <div class="info-card">
+                <h3>Заезд и выезд</h3>
+                <ul>
+                    <li>Заезд: с 15:00</li>
+                    <li>Выезд: до 12:00</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>Характеристики отеля</h3>
+                <ul>
+                    <li>16 конференц-залов различного размера, включая один из крупнейших бальных залов люкс-класса</li>
+                    <li>226 номеров, включая 22 люкса</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>Интернет</h3>
+                <ul>
+                    <li>Бесплатный высокоскоростной Wi-Fi доступен во всех помещениях отеля</li>
+                    <li>Скорость интернета позволяет одновременно использовать 200 МБ/с на одного пользователя</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>Парковка</h3>
+                <ul>
+                    <li>Отель предоставляет подземную парковку с услугами парковщика</li>
+                    <li>3 CHF за час</li>
+                    <li>40 CHF за сутки</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>Правила размещения домашних животных</h3>
+                <ul>
+                    <li>Домашние животные в отеле не допускаются</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>Курение</h3>
+                <ul>
+                    <li>Курение запрещено во всех номерах и общественных зонах отеля. Для курильщиков предусмотрены специальные зоны на открытом воздухе</li>
+                </ul>
+            </div>
+        </div>
+        </section>
+        <section class="rooms-section fade-in">
+        <div class="rooms-heading">Номера</div>
+            <h3>Количество номеров</h3>
+            <p>Отель предлагает 226 номеров, включая 22 люкса</p>
+        </div>
+        <div class="room-features">
+            <h3>Особенности номеров</h3>
+            <ul>
+                <li>Весенняя обработка кондиционерами Hermès, швейцарскими Bang & Olufsen, а также предоставление эксклюзивных услуг, таких как личный консьерж и вид на озеро.</li>
+                <li>Люксы предлагают услуги премиум-класса, включая зоны отдыха, частные лифты, заказ еды в номер и улучшенные окна.</li>
+            </ul>
+        </div>
+    </section>
+    <section class="restaurants-section fade-in">
+        <div class="restaurants-heading">Рестораны и бары</div>
+        <h3>Рестораны</h3>
+        <div class="restaurant-subsection">
+            <h3>Bayview</h3>
+            <ul>
+                <li>Ресторан под руководством шеф-повара Мишеля Ротта, отмеченного звездой гида Мишлен.</li>
+                <li>Меню включает изысканные блюда французской кухни с современным подходом.</li>
+                <li>В 2016 году ресторан получил 18 из 20 баллов от гида Го-Мийо.</li>
+            </ul>
+        </div>
+        <div class="restaurant-subsection">
+            <h3>Arabesque</h3>
+            <ul>
+                <li>Ресторан высокой кухни, предлагающий традиционные блюда Ближнего Востока.</li>
+                <li>Изысканный выбор вин и коктейлей, сочетающий атмосферу уюта и роскоши.</li>
+            </ul>
+        </div>
+        <div class="restaurant-subsection">
+            <h3>Сезонный японский ресторан</h3>
+            <ul>
+                <li>Ресторан с блюдами по сезонам: сукияки, суси и сашими, приготовленные из свежайших ингредиентов.</li>
+            </ul>
+        </div>
+        <h3>Бары</h3>
+        <div class="restaurant-subsection">
+            <h3>Glow и So:</h3>
+            <ul>
+                <li>Стильные бары с широким выбором коктейлей, вин и шампанского.</li>
+                <li>Идеальное место для вечернего отдыха..</li>
+            </ul>
+        </div>
+        <div class="restaurant-subsection">
+            <h3>Бар у бассейна:</h3>
+            <ul>
+                <li>Работает с мая по сентябрь.</li>
+                <li>Предлагает освежающие напитки и легкие закуски в расслабляющей атмосфере у бассейна.</li>
+            </ul>
+        </div>
+    </section>
+    <section class="fitness-section fade-in">
+    <div class="fitness-heading">Фитнес и отдых</div>
+    <div class="fitness-cards">
+        <div class="fitness-card">
+            <h3>Фитнес-центр</h3>
+            <ul>
+                <li>Оснащён тренажёрами премиум-класса от Technogym, включая кардиотренажёры, силовые машины и свободные веса.</li>
+                <li>Часы работы: Фитнес-центр работает круглосуточно (24/7), что позволяет заниматься в удобное время.</li>
+                <li>Дополнительные удобства: Гости могут воспользоваться подогреваемыми полами, водой и горячими напитками в комнате отдыха.</li>
+            </ul>
+        </div>
+        <div class="fitness-card">
+            <h3>Бассейны</h3>
+            <ul>
+                <li>Открытый бассейн с панорамным видом на террасе с видом на Женевское озеро.</li>
+                <li>Расслабляющая атмосфера на озере, создающая ощущение французской Ривьеры.</li>
+                <li>Рядом с бассейном работают бары, где можно заказать напитки и закуски.</li>
+            </ul>
+        </div>
+        <div class="fitness-card">
+            <h3>Спа-центр La Mer</h3>
+            <ul>
+                <li>Предоставляет процедуры с использованием легендарных средств Crème de La Mer.</li>
+                <li>Уход за телом и душой: хаммам, джакузи, процедуры, массажи, такие как генеральный уход за лицом с использованием Miracle Broth™.</li>
+                <li>Также спа-центр отличается роскошной атмосферой и великолепными удобствами.</li>
+            </ul>
+        </div>
+    </div>
+    </section>
+    </main>
+    <footer class="footer-section">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Социальные сети</h4>
+                <div class="social-links">
+                    <a href="https://facebook.com" class="social-link" target="_blank">
+                        <i class="social-icon fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" class="social-link" target="_blank">
+                        <i class="social-icon fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com" class="social-link" target="_blank">
+                        <i class="social-icon fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Локация</h4>
+                <p>Hotel President Wilson, a Luxury Collection Hotel, GENEVA</p>
+            </div>
+            <div class="footer-column">
+                <h4>Контакты</h4>
+                <p>Тел.: +41 22-9066113</p>
+                <p>Факс: +41 22-9066666</p>
+            </div>
+        </div>
+        <div class="footer-credit">Разработано Воронович Дианой Игоревной</div>
+    </footer>
+    <script src="js/about.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

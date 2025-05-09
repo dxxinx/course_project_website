@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room</title>
+    <link rel="stylesheet" href="../css/globals.css">
+    <link rel="stylesheet" href="../css/room.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="background-image"></div>
+        <div class="content-wrapper">
+            <header>
+                <div class="header__container">
+                  <div class="header__logo">
+                    <a href="C:\КЯР(лабы)\курсач\сайт\index.html">
+                        <img src="../foto/logotip.svg" alt="Hotel President Wilson" >
+                    </a>
+                  </div>
+                   <nav class="header__nav">
+                    <ul class="nav-list">
+                      <li><a href="C:\КЯР(лабы)\курсач\сайт\index.html" class="nav-link">Главная</a></li>
+                      <li><a href="C:\КЯР(лабы)\курсач\сайт\room.html" class="nav-link">Номера</a></li>
+                      <li><a href="C:\КЯР(лабы)\курсач\сайт\about.html" class="nav-link">Об отеле</a></li>
+                      <li><a href="C:\КЯР(лабы)\курсач\сайт\kitchen.html" class="nav-link">О кухне</a></li>
+                      <li><a href="C:\КЯР(лабы)\курсач\сайт\form.html" class="nav-button">Забронировать</a></li>
+                    </ul>
+                  </nav>
+                <button class="burger" aria-label="Открыть меню">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+                <nav class="mobile-menu">
+                    <button class="close-menu" aria-label="Закрыть меню">✖</button>
+                    <ul class="mobile-nav-list">
+                        <li><a href="C:\КЯР(лабы)\курсач\сайт\index.html" class="mobile-nav-link">Главная</a></li>
+                        <li><a href="C:\КЯР(лабы)\курсач\сайт\room.html" class="mobile-nav-link">Номера</a></li>
+                        <li><a href="C:\КЯР(лабы)\курсач\сайт\about.html" class="mobile-nav-link">Об отеле</a></li>
+                        <li><a href="C:\КЯР(лабы)\курсач\сайт\kitchen.html" class="mobile-nav-link">О кухне</a></li>
+                        <li><a href="C:\КЯР(лабы)\курсач\сайт\form.html" class="mobile-nav-button">Забронировать</a></li>
+                    </ul>
+                </nav>
+                  </div>
+              </header>
+            <div class="hotel-header">
+                <h1 class="hotel-title">Выберете свой номер</h1>
+                <p class="hotel-subtitle">Welcome to Hotel President Wilson, a Luxury Collection Hotel, Geneva</p>
+            </div>
+        </div>
+    </div>
+    <main class="main-content">
+    <section class="room-advertisement">
+        <div class="room-image">
+            <img src="../foto/XXL_height.webp" alt="Люкс номер" class="image">
+        </div>
+        <div class="room-description">
+            <h2 class="room-title">Люкс</h2>
+            <div class="features-container">
+                <ul class="room-features">
+                    <li><i class="fas fa-bed feature-icon"></i> 1 королевская или 2 односпальные кровати</li>
+                    <li><i class="fas fa-wifi feature-icon"></i> Бесплатный интернет</li>
+                    <li><i class="fas fa-soap feature-icon"></i> Туалетные принадлежности</li>
+                    <li><i class="fas fa-shower feature-icon"></i> Холодный и горячий душ 24/7</li>
+                    <li><i class="fas fa-city feature-icon"></i> Вид на город</li>
+                </ul>
+                <ul class="room-features">
+                    <li><i class="fas fa-coffee feature-icon"></i> Вода/кофе/чай</li>
+                    <li><i class="fas fa-snowflake feature-icon"></i> Мини-холодильник</li>
+                    <li><i class="fas fa-tv feature-icon"></i> Телевизор</li>
+                    <li><i class="fas fa-utensils feature-icon"></i> Завтрак/обед/ужин</li>
+                    <li><i class="fas fa-fan feature-icon"></i> Кондиционер</li>
+                </ul>
+            </div>
+            <a href="C:\КЯР(лабы)\курсач\сайт\form.html" class="book-button">Забронировать</a>
+        </div>
+    </section>
+    <section class="room-advertisement">
+        <div class="room-image">
+            <img src="../foto/premium.jpg" alt="Премиум номер" class="image">
+        </div>
+        <div class="room-description">
+            <h2 class="room-title">Премиум номер</h2>
+            <div class="features-container">
+                <ul class="room-features">
+                    <li><i class="fas fa-bed feature-icon"></i> 1 королевская или 2 односпальные кровати</li>
+                    <li><i class="fas fa-wifi feature-icon"></i> Бесплатный интернет</li>
+                    <li><i class="fas fa-soap feature-icon"></i> Туалетные принадлежности</li>
+                    <li><i class="fas fa-shower feature-icon"></i> Холодный и горячий душ 24/7</li>
+                    <li><i class="fas fa-water feature-icon"></i> Частичный вид на озеро</li>
+                </ul>
+                <ul class="room-features">
+                    <li><i class="fas fa-coffee feature-icon"></i> Вода/кофе/чай</li>
+                    <li><i class="fas fa-snowflake feature-icon"></i> Мини-холодильник</li>
+                    <li><i class="fas fa-tv feature-icon"></i> Телевизор</li>
+                    <li><i class="fas fa-utensils feature-icon"></i> Завтрак/обед/ужин</li>
+                    <li><i class="fas fa-fan feature-icon"></i> Кондиционер</li>
+                </ul>
+            </div>
+            <a href="C:\КЯР(лабы)\курсач\сайт\form.html" class="book-button">Забронировать</a>
+        </div>
+    </section>
+    <section class="room-advertisement">
+        <div class="room-image">
+            <img src="../foto/gostevoy_nomer_delux_1.webp" alt="Гостевой номер Делюкс" class="image">
+        </div>
+        <div class="room-description">
+            <h2 class="room-title">Гостевой номер Делюкс</h2>
+            <div class="features-container">
+                <ul class="room-features">
+                    <li><i class="fas fa-bed feature-icon"></i> 1 королевская или 2 односпальные кровати</li>
+                    <li><i class="fas fa-wifi feature-icon"></i> Бесплатный интернет</li>
+                    <li><i class="fas fa-soap feature-icon"></i> Туалетные принадлежности</li>
+                    <li><i class="fas fa-shower feature-icon"></i> Холодный и горячий душ 24/7</li>
+                    <li><i class="fas fa-swimming-pool feature-icon"></i> Вид на бассейн</li>
+                </ul>
+                <ul class="room-features">
+                    <li><i class="fas fa-coffee feature-icon"></i> Вода/кофе/чай</li>
+                    <li><i class="fas fa-snowflake feature-icon"></i> Мини-холодильник</li>
+                    <li><i class="fas fa-tv feature-icon"></i> Телевизор</li>
+                    <li><i class="fas fa-utensils feature-icon"></i> Завтрак/обед/ужин</li>
+                    <li><i class="fas fa-fan feature-icon"></i> Кондиционер</li>
+                </ul>
+            </div>
+            <a href="C:\КЯР(лабы)\курсач\сайт\form.html" class="book-button">Забронировать</a>
+        </div>
+    </section>
+    <section class="room-advertisement">
+        <div class="room-image">
+            <img src="../foto/gostevoy_nomer_delux_2.jpg" alt="Гостевой номер Делюкс" class="image">
+        </div>
+        <div class="room-description">
+            <h2 class="room-title">Гостевой номер Делюкс</h2>
+            <div class="features-container">
+                <ul class="room-features">
+                    <li><i class="fas fa-bed feature-icon"></i> 1 королевская или 2 односпальные кровати</li>
+                    <li><i class="fas fa-wifi feature-icon"></i> Бесплатный интернет</li>
+                    <li><i class="fas fa-soap feature-icon"></i> Туалетные принадлежности</li>
+                    <li><i class="fas fa-shower feature-icon"></i> Холодный и горячий душ 24/7</li>
+                    <li><i class="fas fa-water feature-icon"></i> Вид на озеро</li>
+                </ul>
+                <ul class="room-features">
+                    <li><i class="fas fa-coffee feature-icon"></i> Вода/кофе/чай</li>
+                    <li><i class="fas fa-snowflake feature-icon"></i> Мини-холодильник</li>
+                    <li><i class="fas fa-tv feature-icon"></i> Телевизор</li>
+                    <li><i class="fas fa-utensils feature-icon"></i> Завтрак/обед/ужин</li>
+                    <li><i class="fas fa-fan feature-icon"></i> Кондиционер</li>
+                </ul>
+            </div>
+            <a href="C:\КЯР(лабы)\курсач\сайт\form.html" class="book-button">Забронировать</a>
+        </div>
+    </section>
+    <section class="room-advertisement">
+        <div class="room-image">
+            <img src="../foto/ispolnitelu.jpeg" alt="Исполнительный номер" class="image">
+        </div>
+        <div class="room-description">
+            <h2 class="room-title">Исполнительный номер</h2>
+            <div class="features-container">
+                <ul class="room-features">
+                    <li><i class="fas fa-bed feature-icon"></i> 1 королевская</li>
+                    <li><i class="fas fa-wifi feature-icon"></i> Бесплатный интернет</li>
+                    <li><i class="fas fa-soap feature-icon"></i> Туалетные принадлежности</li>
+                    <li><i class="fas fa-shower feature-icon"></i> Холодный и горячий душ 24/7</li>
+                    <li><i class="fas fa-city feature-icon"></i> Вид на город</li>
+                </ul>
+                <ul class="room-features">
+                    <li><i class="fas fa-coffee feature-icon"></i> Вода/кофе/чай</li>
+                    <li><i class="fas fa-snowflake feature-icon"></i> Мини-холодильник</li>
+                    <li><i class="fas fa-tv feature-icon"></i> Телевизор</li>
+                    <li><i class="fas fa-utensils feature-icon"></i> Завтрак/обед/ужин</li>
+                    <li><i class="fas fa-fan feature-icon"></i> Кондиционер</li>
+                </ul>
+            </div>
+            <a href="C:\КЯР(лабы)\курсач\сайт\form.html" class="book-button">Забронировать</a>
+        </div>
+    </section>
+    <section class="room-advertisement">
+        <div class="room-image">
+            <img src="../foto/yglovoy_yunior.jpg" alt="Угловой Юниор" class="image">
+        </div>
+        <div class="room-description">
+            <h2 class="room-title">Угловой Юниор</h2>
+            <div class="features-container">
+                <ul class="room-features">
+                    <li><i class="fas fa-bed feature-icon"></i> 1 королевская</li>
+                    <li><i class="fas fa-wifi feature-icon"></i> Бесплатный интернет</li>
+                    <li><i class="fas fa-soap feature-icon"></i> Туалетные принадлежности</li>
+                    <li><i class="fas fa-shower feature-icon"></i> Холодный и горячий душ 24/7</li>
+                    <li><i class="fas fa-water feature-icon"></i> Вид на озеро</li>
+                </ul>
+                <ul class="room-features">
+                    <li><i class="fas fa-coffee feature-icon"></i> Вода/кофе/чай</li>
+                    <li><i class="fas fa-snowflake feature-icon"></i> Мини-холодильник</li>
+                    <li><i class="fas fa-tv feature-icon"></i> Телевизор</li>
+                    <li><i class="fas fa-utensils feature-icon"></i> Завтрак/обед/ужин</li>
+                    <li><i class="fas fa-fan feature-icon"></i> Кондиционер</li>
+                </ul>
+            </div>
+            <a href="C:\КЯР(лабы)\курсач\сайт\form.html" class="book-button">Забронировать</a>
+        </div>
+    </section>
+    <section class="room-advertisement">
+        <div class="room-image">
+            <img src="../foto/mladshiu_lyx.webp" alt="Младший Люкс" class="image">
+        </div>
+        <div class="room-description">
+            <h2 class="room-title">Младший Люкс</h2>
+            <div class="features-container">
+                <ul class="room-features">
+                    <li><i class="fas fa-bed feature-icon"></i> 1 королевская</li>
+                    <li><i class="fas fa-wifi feature-icon"></i> Бесплатный интернет</li>
+                    <li><i class="fas fa-soap feature-icon"></i> Туалетные принадлежности</li>
+                    <li><i class="fas fa-shower feature-icon"></i> Холодный и горячий душ 24/7</li>
+                    <li><i class="fas fa-water feature-icon"></i> Вид на озеро</li>
+                </ul>
+                <ul class="room-features">
+                    <li><i class="fas fa-coffee feature-icon"></i> Вода/кофе/чай</li>
+                    <li><i class="fas fa-snowflake feature-icon"></i> Мини-холодильник</li>
+                    <li><i class="fas fa-tv feature-icon"></i> Телевизор</li>
+                    <li><i class="fas fa-utensils feature-icon"></i> Завтрак/обед/ужин</li>
+                    <li><i class="fas fa-fan feature-icon"></i> Кондиционер</li>
+                </ul>
+            </div>
+            <a href="C:\КЯР(лабы)\курсач\сайт\form.html" class="book-button">Забронировать</a>
+        </div>
+    </section>
+    <section class="room-advertisement">
+        <div class="room-image">
+            <img src="../foto/ispolnitelnu_Leman.webp" alt="Исполнительный люкс Leman" class="image">
+        </div>
+        <div class="room-description">
+            <h2 class="room-title">Исполнительный люкс Leman</h2>
+            <div class="features-container">
+                <ul class="room-features">
+                    <li><i class="fas fa-bed feature-icon"></i> 1 королевская</li>
+                    <li><i class="fas fa-wifi feature-icon"></i> Бесплатный интернет</li>
+                    <li><i class="fas fa-soap feature-icon"></i> Туалетные принадлежности</li>
+                    <li><i class="fas fa-shower feature-icon"></i> Холодный и горячий душ 24/7</li>
+                    <li><i class="fas fa-water feature-icon"></i> Вид на озеро</li>
+                </ul>
+                <ul class="room-features">
+                    <li><i class="fas fa-coffee feature-icon"></i> Вода/кофе/чай</li>
+                    <li><i class="fas fa-snowflake feature-icon"></i> Мини-холодильник</li>
+                    <li><i class="fas fa-tv feature-icon"></i> Телевизор</li>
+                    <li><i class="fas fa-utensils feature-icon"></i> Завтрак/обед/ужин</li>
+                    <li><i class="fas fa-fan feature-icon"></i> Кондиционер</li>
+                </ul>
+            </div>
+            <a href="C:\КЯР(лабы)\курсач\сайт\form.html" class="book-button">Забронировать</a>
+        </div>
+    </section>
+    <section class="room-advertisement">
+        <div class="room-image">
+            <img src="../foto/koronnu_lux.webp" alt="Коронный люкс" class="image">
+        </div>
+        <div class="room-description">
+            <h2 class="room-title">Коронный Люкс</h2>
+            <div class="features-container">
+                <ul class="room-features">
+                    <li><i class="fas fa-bed feature-icon"></i> 1 королевская</li>
+                    <li><i class="fas fa-wifi feature-icon"></i> Бесплатный интернет</li>
+                    <li><i class="fas fa-soap feature-icon"></i> Туалетные принадлежности</li>
+                    <li><i class="fas fa-shower feature-icon"></i> Холодный и горячий душ 24/7</li>
+                    <li><i class="fas fa-water feature-icon"></i> Вид на озеро</li>
+                </ul>
+                <ul class="room-features">
+                    <li><i class="fas fa-coffee feature-icon"></i> Вода/кофе/чай</li>
+                    <li><i class="fas fa-snowflake feature-icon"></i> Мини-холодильник</li>
+                    <li><i class="fas fa-tv feature-icon"></i> Телевизор</li>
+                    <li><i class="fas fa-utensils feature-icon"></i> Завтрак/обед/ужин</li>
+                    <li><i class="fas fa-fan feature-icon"></i> Кондиционер</li>
+                </ul>
+            </div>
+            <a href="C:\КЯР(лабы)\курсач\сайт\form.html" class="book-button">Забронировать</a>
+        </div>
+    </section>
+    <section class="room-advertisement">
+        <div class="room-image">
+            <img src="../foto/president_lux.webp" alt="Президентский Люкс" class="image">
+        </div>
+        <div class="room-description">
+            <h2 class="room-title">Президентский Люкс</h2>
+            <div class="features-container">
+                <ul class="room-features">
+                    <li><i class="fas fa-bed feature-icon"></i> 1 королевская или 2 односпальные кровати</li>
+                    <li><i class="fas fa-wifi feature-icon"></i> Бесплатный интернет</li>
+                    <li><i class="fas fa-soap feature-icon"></i> Туалетные принадлежности</li>
+                    <li><i class="fas fa-shower feature-icon"></i> Холодный и горячий душ 24/7</li>
+                    <li><i class="fas fa-city feature-icon"></i> Вид на город</li>
+                </ul>
+                <ul class="room-features">
+                    <li><i class="fas fa-coffee feature-icon"></i> Вода/кофе/чай</li>
+                    <li><i class="fas fa-snowflake feature-icon"></i> Мини-холодильник</li>
+                    <li><i class="fas fa-tv feature-icon"></i> Телевизор</li>
+                    <li><i class="fas fa-utensils feature-icon"></i> Завтрак/обед/ужин</li>
+                    <li><i class="fas fa-fan feature-icon"></i> Кондиционер</li>
+                </ul>
+            </div>
+            <a href="C:\КЯР(лабы)\курсач\сайт\form.html" class="book-button">Забронировать</a>
+        </div>
+    </section>
+    </main>
+    <footer class="footer-section">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Социальные сети</h4>
+                <div class="social-links">
+                    <a href="https://facebook.com" class="social-link" target="_blank">
+                        <i class="social-icon fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" class="social-link" target="_blank">
+                        <i class="social-icon fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com" class="social-link" target="_blank">
+                        <i class="social-icon fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Локация</h4>
+                <p>Hotel President Wilson, a Luxury Collection Hotel, GENEVA</p>
+            </div>
+            <div class="footer-column">
+                <h4>Контакты</h4>
+                <p>Тел.: +41 22-9066113</p>
+                <p>Факс: +41 22-9066666</p>
+            </div>
+        </div>
+        <div class="footer-credit">Разработано Воронович Дианой Игоревной</div>
+    </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
